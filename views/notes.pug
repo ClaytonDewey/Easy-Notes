@@ -35,8 +35,9 @@ html
                                     li
                                         span.title=note.title
                                         span.content=note.content
-                                        div.text-center
-                                            a(class="btn btn-primary" href=`/notes/${note._id}`) Edit
-                                            a(class="btn btn-danger" href=``) Delete
+                                        a( href=`/notes/${note._id}`)
+                                            span.fas.fa-edit
+                                        a( href=``)
+                                            span.fas.fa-trash-alt.text-danger
 
     script(src="/js/validate.js")

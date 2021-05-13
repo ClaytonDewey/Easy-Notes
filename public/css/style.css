@@ -9,3 +9,7 @@ span.title {
   display: block;
   font-weight: 700;
 }
+
+span.content {
+  display: inline;
+}
