@@ -16,5 +16,8 @@ html
                     h1.text-center EasyNotes
                     .todo.card
                         .card-body
-                            p=message
-                            a(href="/notes") View Notes
+                            ul.list-unstyled
+                                each note in notes
+                                    li
+                                        span.title=note.title
+                                        span.content=note.content
